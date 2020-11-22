@@ -19,7 +19,7 @@ DEFAULT_PACKAGES += \
 	kmod-leds-gpio kmod-gpio-button-hotplug swconfig \
 	kmod-ath10k wpad-openssl \
 	kmod-usb3 kmod-usb-dwc3 ath10k-firmware-qca4019 \
-	autocore-arm automount autosamba luci-app-ipsec-vpnd luci-app-unblockmusic luci-app-cpufreq luci-app-zerotier luci-app-xlnetacc \
+	autocore-arm automount luci-ssl-openssl luci-app-cifsd luci-app-ipsec-vpnd luci-app-guest-wifi luci-app-uhttpd luci-app-unblockmusic luci-app-ttyd luci-app-cpufreq luci-app-wifischedule luci-app-zerotier \
 	htop fdisk e2fsprogs ethtool
 
 $(eval $(call BuildTarget))
