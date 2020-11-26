@@ -1,11 +1,13 @@
 
 config listen 'listen'
-	option enable4 '1'
+	option enable4 '0'
 	option ipv4 '0.0.0.0'
 	option enable6 '0'
 	option ipv6 '::1'
 	option port '21'
 	option dataport '20'
+	option pasv_min_port '50000'
+	option pasv_max_port '51000'
 
 config local 'local'
 	option enabled '1'
