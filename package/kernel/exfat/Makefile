@@ -22,7 +22,7 @@ include $(INCLUDE_DIR)/package.mk
 TAR_OPTIONS+= --strip-components 1
 TAR_CMD=$(HOST_TAR) -C $(1) $(TAR_OPTIONS)
 
-define KernelPackage/fs-exfat
+define KernelPackage/fs-exfat-oot
   SECTION:=kernel
   CATEGORY:=Kernel modules
   SUBMENU:=Filesystems
@@ -44,4 +44,4 @@ define Build/Compile
 	modules
 endef
 
-$(eval $(call KernelPackage,fs-exfat))
+$(eval $(call KernelPackage,fs-exfat-oot))
