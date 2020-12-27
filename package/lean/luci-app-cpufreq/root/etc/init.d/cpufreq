@@ -13,7 +13,7 @@ start()
 	config_load cpufreq
 	local governor=$(uci_get_by_type settings governor ondemand)
 	local minifreq=$(uci_get_by_type settings minifreq 48000)
-	local maxfreq=$(uci_get_by_type settings maxfreq 716000)
+	local maxfreq=$(uci_get_by_type settings maxfreq 896000)
 	local upthreshold=$(uci_get_by_type settings upthreshold 50)
 	local factor=$(uci_get_by_type settings factor 10)
 
