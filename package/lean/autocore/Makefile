@@ -9,15 +9,25 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=autocore
 PKG_VERSION:=1
+<<<<<<< HEAD
 PKG_RELEASE:=36
+=======
+PKG_RELEASE:=35
+>>>>>>> lean-openwrt/lede-17.01
 
 include $(INCLUDE_DIR)/package.mk
 
 define Package/autocore-arm
   TITLE:=Arm auto core loadbalance script.
   MAINTAINER:=CN_SZTL
+<<<<<<< HEAD
   DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x) \
     +TARGET_bcm53xx:nvram +(TARGET_ipq40xx||TARGET_ipq806x):lm-sensors
+=======
+  DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_mvebu||TARGET_ipq40xx||TARGET_ipq806x||TARGET_rockchip) \
+    +TARGET_bcm53xx:nvram \
+    +TARGET_ipq40xx:lm-sensors
+>>>>>>> lean-openwrt/lede-17.01
   VARIANT:=arm
 endef
 
